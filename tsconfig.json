@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs", // CommonJS for compatibility with Node.js
+        "moduleResolution": "node", // Ensure Node.js-style module resolution
+        "outDir": "dist", // Directory for output files
+        "rootDir": ".", // Root directory for input files
+        "esModuleInterop": true, // Allow default imports from CommonJS modules
+        "resolveJsonModule": true, // Allow importing JSON files
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        // "typeRoots": [
+        //     "./types"
+        // ],
+        "types": [
+            "node",
+            "multer"
+        ]
+    },
+    "include": [
+        "./**/*",
+        "doc/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
