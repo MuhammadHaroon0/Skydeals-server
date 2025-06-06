@@ -14,7 +14,7 @@ import connectDB from "./db";
 connectDB();
 
 const server = app.listen(process.env.PORT || 5000, () => {
-  console.log("Server started at port " + process.env.BACKEND_PORT);
+  console.log("Server started at port " + process.env.PORT);
 });
 
 process.on("unhandledRejection", (err: Error, promise) => {
